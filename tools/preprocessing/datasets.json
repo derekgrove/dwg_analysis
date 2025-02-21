@@ -1,0 +1,68 @@
+{
+    "2017": {
+        "ttbar": {
+            "DAS_path": "/TTJets_DiLept_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM",
+            "is_mc": true,
+            "is_signal": false
+        },
+        "WZ": {
+            "DAS_path": "/WZ_TuneCP5_13TeV-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM",
+            "is_mc": true,
+            "is_signal": false
+        },
+        "TChiWZ": {
+            "DAS_path": "/SMS-TChiWZ_ZToLL_mZMin-0p1_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM",
+            "is_mc": true,
+            "is_signal": true
+        },
+        "TSlepSlep": {
+            "DAS_path": "/SMS-TSlepSlep_mSlep-100To475_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL17NanoAODv9-FSUL17_FSUL17_106X_mc2017_realistic_v9-v1/NANOAODSIM",
+            "is_mc": true,
+            "is_signal": true
+        }
+    },
+    "2023": {
+        "SlepSnu_MN1_220": {
+            "DAS_path": "/SlepSnuCascade_MN1-220_MN2-260_MC1-240_TuneCP5_13p6TeV_madgraphMLM-pythia8/Run3Summer23BPixNanoAODv12-130X_mcRun3_2023_realistic_postBPix_v6-v3/NANOAODSIM",
+            "is_mc": true,
+            "is_signal": true
+        },
+        "SlepSnu_MN1_260": {
+            "DAS_path": "/SlepSnuCascade_MN1-260_MN2-280_MC1-270_TuneCP5_13p6TeV_madgraphMLM-pythia8/Run3Summer23BPixNanoAODv12-130X_mcRun3_2023_realistic_postBPix_v6-v3/NANOAODSIM",
+            "is_mc": true,
+            "is_signal": true
+        },
+        "SlepSnu_MN1_270": {
+            "DAS_path": "/SlepSnuCascade_MN1-270_MN2-280_MC1-275_TuneCP5_13p6TeV_madgraphMLM-pythia8/Run3Summer23BPixNanoAODv12-130X_mcRun3_2023_realistic_postBPix_v6-v3/NANOAODSIM",
+            "is_mc": true,
+            "is_signal": true
+        },
+        "ttbar": {
+            "DAS_path": "/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8/Run3Summer23NanoAODv12-130X_mcRun3_2023_realistic_v14-v2/NANOAODSIM",
+            "is_mc": true,
+            "is_signal": false
+        },
+        "WZ": {
+            "DAS_path": "/WZ_TuneCP5_13p6TeV_pythia8/Run3Summer23BPixNanoAODv12-130X_mcRun3_2023_realistic_postBPix_v2-v2/NANOAODSIM",
+            "is_mc": true,
+            "is_signal": false
+        },
+        "WJets": {
+            "DAS_path": "/WtoLNu-2Jets_PTLNu-100to200_1J_TuneCP5_13p6TeV_amcatnloFXFX-pythia8/Run3Summer23BPixNanoAODv12-130X_mcRun3_2023_realistic_postBPix_v2-v3/NANOAODSIM",
+            "is_mc": true,
+            "is_signal": false
+        },
+        "WW": {
+            "DAS_path": "/WW_TuneCP5_13p6TeV_pythia8/Run3Summer23BPixNanoAODv12-130X_mcRun3_2023_realistic_postBPix_v2-v2/NANOAODSIM",
+            "is_mc": true,
+            "is_signal": false
+        },
+        "Drell-Yan": {
+            "DAS_path": "/DYto2L-2Jets_MLL-10to50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8/Run3Summer23BPixNanoAODv12-130X_mcRun3_2023_realistic_postBPix_v2_ext1-v3/NANOAODSIM",
+            "is_mc": true,
+            "is_signal": false
+        }
+    }
+}
+
+
