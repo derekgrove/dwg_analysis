@@ -31,3 +31,18 @@ git push origin main  # Push the updated main branch
 I should get in the habit of regulary checking git status for uncommitted changes: 
 
 `git status`
+
+
+
+## example removing files from tracking on git:
+
+```
+[cms-jovyan@jupyter-derek-2ewilliam-2egrove-40cern-2ech dwg_analysis]$ git rm -r --cached **/.sites_map.json
+rm 'notes/.sites_map.json'
+rm 'tools/.sites_map.json'
+```
+
+then you need to add `**/.sites_map.json` to the `.gitignore` file and push that to main
+The double star `**` means ignore the file everywhere it may appear in the project, so probably safe to use here for this
+
+
