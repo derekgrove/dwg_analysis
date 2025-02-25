@@ -37,12 +37,16 @@ I should get in the habit of regulary checking git status for uncommitted change
 ## example removing files from tracking on git:
 
 ```
+#copy paste from terminal:
 [cms-jovyan@jupyter-derek-2ewilliam-2egrove-40cern-2ech dwg_analysis]$ git rm -r --cached **/.sites_map.json
 rm 'notes/.sites_map.json'
 rm 'tools/.sites_map.json'
 ```
 
-then you need to add `**/.sites_map.json` to the `.gitignore` file and push that to main
+more simply, in each directory that has the file you want to "delete" from git (stop tracking and remove from github), run:
+`git rm -r --cached .ipynb_checkpoints` while in the directory that has the file/directory you want to stop tracking.
+
+then you need to add `**.sites_map.json` to the `.gitignore` file and push that to main
 The double star `**` means ignore the file everywhere it may appear in the project, so probably safe to use here for this
 
 

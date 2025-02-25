@@ -10,6 +10,28 @@ import hist.dask as dah
 
 
 
+# Some basic, general tools:
+
+
+def count_obj(obj):
+    
+    counts = ak.sum(ak.num(obj))
+    
+    return counts
+
+def count_obj_events(obj, events):
+    
+    obj_count = ak.num(obj)
+    event_mask = (obj_count >= 1)
+    event_count = ak.num(events[event_mask], axis=0)
+    
+    return event_count
+
+def count_obj_and_events(obj, events):
+
+    return count_obj(obj), count_obj_events(obj, events)
+
+    
 # custodial cuts for jet object in NanoAOD (for delta r matching to electrons)
 def jet_cuts(jet_obj):
     """ Apply selection cuts to jets for later use with delta r matching to electrons """
@@ -57,10 +79,6 @@ def delta_r_electron_pairs(ele_obj):
     min_delta_r = ak.min(delta_r_matrix, axis=1, initial=1e6)  # Avoid empty lists issue
 
     return min_delta_r
-
-def test_comb(ele_obj):
-
-    ak.combinations(ele_obj, 2).show()
 
 
 
@@ -110,22 +128,6 @@ def vidUnpackedWPSelection(electrons, level):
 
 
 
-def count_events(events, ele_obj):
-    ele_counts = ak.num(ele_obj)
-    
-    event_count = ak.count_nonzero(ele_counts >= 1)
-    return event_count
-
-def count_ele(ele_obj):
-    ele_counts = ak.num(ele_obj)
-
-    counts = ak.sum(ele_counts)
-    return counts
-
-def count_events_and_ele(events, ele_obj):
-    
-    return count_events(events, ele_obj), count_ele(ele_obj)
-
 
 def veto_minus_iso_mask(ele_obj):
     
@@ -141,6 +143,24 @@ def veto_minus_iso_mask(ele_obj):
         (vid_Unpacked['GsfEleEInverseMinusPInverseCut'] >= 1) &
         (vid_Unpacked['GsfEleConversionVetoCut'] >= 1) &
         (vid_Unpacked['GsfEleMissingHitsCut'] >= 1)
+    )
+
+    return mask
+
+def tight_minus_iso_mask(ele_obj):
+    
+    vid_Unpacked = vidUnpackedWP(ele_obj)
+
+    mask = (
+        (vid_Unpacked['MinPtCut'] == 4) & 
+        (vid_Unpacked['GsfEleSCEtaMultiRangeCut'] == 4) &
+        (vid_Unpacked['GsfEleDEtaInSeedCut'] == 4) &
+        (vid_Unpacked['GsfEleDPhiInCut'] == 4) &
+        (vid_Unpacked['GsfEleFull5x5SigmaIEtaIEtaCut'] == 4) &
+        (vid_Unpacked['GsfEleHadronicOverEMEnergyScaledCut'] == 4) &
+        (vid_Unpacked['GsfEleEInverseMinusPInverseCut'] == 4) &
+        (vid_Unpacked['GsfEleConversionVetoCut'] == 4) &
+        (vid_Unpacked['GsfEleMissingHitsCut'] == 4)
     )
 
     return mask
@@ -190,7 +210,7 @@ def silver_mask(ele_obj, jet_obj):
 
     mask = (
         baseline_plus_mask(ele_obj, jet_obj) &
-        (ele_obj.cutBased == 4) &
+        (tight_minus_iso_mask(ele_obj)) &
         ((ele_obj.pfRelIso03_all * ele_obj.pt) <= 4) &
         ((ele_obj.miniPFRelIso_all * ele_obj.pt) <= 4) &
         (ele_obj.sip3d > 2)
@@ -204,7 +224,7 @@ def gold_mask(ele_obj, jet_obj):
 
     mask = (
         baseline_plus_mask(ele_obj, jet_obj) &
-        (ele_obj.cutBased == 4) &
+        (tight_minus_iso_mask(ele_obj)) &
         ((ele_obj.pfRelIso03_all * ele_obj.pt) <= 4) &
         ((ele_obj.miniPFRelIso_all * ele_obj.pt) <= 4) &
         (ele_obj.sip3d <= 2)

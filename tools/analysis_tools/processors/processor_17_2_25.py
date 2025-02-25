@@ -3,22 +3,22 @@ import numpy as np
 from coffea import processor
 from coffea.nanoevents import NanoAODSchema
 # my tools:
-from analysis_tools.parent_filter import prim_ele
-from analysis_tools.ele_skim_v2 import jet_disambig as ele_disambig
-from analysis_tools.ele_skim_v2 import veto_minus_iso_cut as veto_minus_iso_cut
-from analysis_tools.ele_skim_v2 import baseline_cut as baseline_cut
-from analysis_tools.ele_skim_v2 import baseline_plus_cut as baseline_plus_cut
-from analysis_tools.ele_skim_v2 import bronze_cut as bronze_cut
-from analysis_tools.ele_skim_v2 import silver_cut as silver_cut
-from analysis_tools.ele_skim_v2 import gold_cut as gold_cut
-from analysis_tools.ele_skim_v2 import count_events as count_events
-from analysis_tools.ele_skim_v2 import count_ele as count_ele
-from analysis_tools.ele_skim_v2 import count_events_and_ele as count_events_and_ele
-from analysis_tools.ele_skim_v2 import delta_r as delta_r
-from analysis_tools.ele_skim_v2 import make_electron_histograms as make_electron_histograms
-from analysis_tools.ele_skim_v2 import delta_r_electron_pairs as delta_r_electron_pairs
+from analysis_tools.skimming.parent_filter import prim_ele
+from analysis_tools.skimming.ele_skim_v2 import jet_disambig as ele_disambig
+from analysis_tools.skimming.ele_skim_v2 import veto_minus_iso_cut as veto_minus_iso_cut
+from analysis_tools.skimming.ele_skim_v2 import baseline_cut as baseline_cut
+from analysis_tools.skimming.ele_skim_v2 import baseline_plus_cut as baseline_plus_cut
+from analysis_tools.skimming.ele_skim_v2 import bronze_cut as bronze_cut
+from analysis_tools.skimming.ele_skim_v2 import silver_cut as silver_cut
+from analysis_tools.skimming.ele_skim_v2 import gold_cut as gold_cut
+from analysis_tools.skimming.ele_skim_v2 import count_obj_events as count_obj_events
+from analysis_tools.skimming.ele_skim_v2 import count_obj as count_obj
+from analysis_tools.skimming.ele_skim_v2 import count_obj_and_events as count_obj_and_events
+from analysis_tools.skimming.ele_skim_v2 import delta_r as delta_r
+from analysis_tools.skimming.ele_skim_v2 import make_electron_histograms as make_electron_histograms
+from analysis_tools.skimming.ele_skim_v2 import delta_r_electron_pairs as delta_r_electron_pairs
 
-from analysis_tools.ele_skim_v2 import test_comb as test_comb
+
 
 #import hist
 import dask
@@ -35,7 +35,8 @@ class SignalProcessor(processor.ProcessorABC):
         total_entries = ak.num(events, axis=0)
         
         ele = events.Electron
-        total_ele = count_ele(ele)
+        ele=ele[(ele.pt > 10) & (ele.pt <= 20)]
+        total_ele = count_obj(ele)
 
         
         jets = events.Jet # need to give list of Jets to our bronze cuts for delta r matching:
@@ -53,7 +54,7 @@ class SignalProcessor(processor.ProcessorABC):
         filtered_ele = prim_ele(ele)
         filtered_ele = filtered_ele[filtered_ele.genPartFlav == 1]
         
-        events_filtered, count_filtered = count_events_and_ele(events, filtered_ele)
+        count_filtered, events_filtered = count_obj_and_events(filtered_ele, events)
 
         # replace regular electron collection with genParent filtered and genFlav 1:
         
@@ -62,25 +63,25 @@ class SignalProcessor(processor.ProcessorABC):
         # begin baseline cuts: #######
         
         baseline_ele = baseline_cut(ele)
-        events_baseline, count_baseline = count_events_and_ele(events, baseline_ele)
+        count_baseline, events_baseline = count_obj_and_events(baseline_ele, events)
 
         
         # begin baseline+ cuts: #######
 
         blp_ele = baseline_plus_cut(ele, jets)
-        events_blp, count_blp = count_events_and_ele(events, blp_ele)
+        count_blp, events_blp = count_obj_and_events(blp_ele, events)
 
         # begin bronze, silver, gold cuts: ######
 
         
         bronze_ele = bronze_cut(ele, jets)
-        events_bronze, count_bronze = count_events_and_ele(events, bronze_ele)
+        count_bronze, events_bronze = count_obj_and_events(bronze_ele, events)
 
         silver_ele = silver_cut(ele, jets)
-        events_silver, count_silver = count_events_and_ele(events, silver_ele)
+        count_silver, events_silver = count_obj_and_events(silver_ele, events)
 
         gold_ele = gold_cut(ele, jets)
-        events_gold, count_gold = count_events_and_ele(events, gold_ele)
+        count_gold, events_gold = count_obj_and_events(gold_ele, events)
         
         #make plots here:
 
@@ -150,6 +151,7 @@ class SignalProcessor(processor.ProcessorABC):
                 "silver_plots": silver_plots,
                 "gold_plots": gold_plots,
                 "min_dr_dist": min_dr_dist,
+            
                 
             },
         
