@@ -1,6 +1,6 @@
 # Skims and cuts for our samples, signal and background
 
-#PLEASE NOTE: The object returned from the skim functions are 
+# PLEASE NOTE: The object returned from the skim functions are 
 # Boolean masks, *not* the filtered list. You use them to create a 
 # mask, then feed that mask back into the object you want to cut on
 
@@ -31,7 +31,7 @@ def count_obj_and_events(obj, events):
 
     return count_obj(obj), count_obj_events(obj, events)
 
-    
+
 # custodial cuts for jet object in NanoAOD (for delta r matching to electrons)
 def jet_cuts(jet_obj):
     """ Apply selection cuts to jets for later use with delta r matching to electrons """
@@ -206,7 +206,7 @@ def tight_minus_iso_hoe_mask(ele_obj):
 def baseline_mask(ele_obj):
     
     mask = (
-        (veto_minus_iso_hoe_mask(ele_obj)) &  # Ensuring this function works properly
+        (veto_minus_iso_mask(ele_obj)) &  # Ensuring this function works properly
         (ele_obj.sip3d < 8) & 
         (np.abs(ele_obj.dxy) < 0.05) & 
         (np.abs(ele_obj.dz) < 0.1)
@@ -246,7 +246,7 @@ def silver_mask(ele_obj, jet_obj):
 
     mask = (
         baseline_plus_mask(ele_obj, jet_obj) &
-        (tight_minus_iso_hoe_mask(ele_obj)) &
+        (tight_minus_iso_mask(ele_obj)) &
         ((ele_obj.pfRelIso03_all * ele_obj.pt) <= 4) &
         ((ele_obj.miniPFRelIso_all * ele_obj.pt) <= 4) &
         (ele_obj.sip3d > 2)
@@ -260,7 +260,7 @@ def gold_mask(ele_obj, jet_obj):
 
     mask = (
         baseline_plus_mask(ele_obj, jet_obj) &
-        (tight_minus_iso_hoe_mask(ele_obj)) &
+        (tight_minus_iso_mask(ele_obj)) &
         ((ele_obj.pfRelIso03_all * ele_obj.pt) <= 4) &
         ((ele_obj.miniPFRelIso_all * ele_obj.pt) <= 4) &
         (ele_obj.sip3d <= 2)
@@ -279,7 +279,7 @@ def bronze_mask(ele_obj, jet_obj):
     )
     
     return mask
-    
+
 """
 def veto_minus_iso(ele_obj, threshold = 1):
 # loop through the entire bitmap in steps of 3 bits, extracting each cut's bits, skipping the 7th cut (iso)
@@ -299,8 +299,8 @@ def veto_minus_iso(ele_obj, threshold = 1):
     return ele_mask
 
 """
-    
-##### Define full cuts here, that utilize the above masks, for convenience #####
+
+# #### Define full cuts here, that utilize the above masks, for convenience #####
 
 
 
@@ -347,7 +347,7 @@ def silver_cut(ele_obj, jet_obj):
 def gold_cut(ele_obj, jet_obj):
 
     return ele_obj[gold_mask(ele_obj, jet_obj)]
-        
+
 
 
 

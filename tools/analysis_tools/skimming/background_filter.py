@@ -51,7 +51,7 @@ def primary_vertex_mask(ele_obj):
     ele_mask = (ele_obj.genPartFlav == 1)
 
     return ele_mask
-    
+
 
 # cutting functions below, apply all masks (or combination):
 
