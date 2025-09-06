@@ -1,0 +1,125 @@
+{
+    "NANO": {
+        "2017": {
+            "TChiWZ_UL": {
+                "notes": "SUSY Signal Sample from 2017, used in our Run2 analysis, but this one is reprocessed for Ultra Legacy",
+                "isMC": true,
+                "postBPix": false,
+                "custom_tag": "SMS, UL",
+                "AOD_version": "9",
+                "branch": "Events",
+                "REMOTE_DIRECTORY": "/SMS-TChiWZ_ZToLL_mZMin-0p1_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL17NanoAODv9-106X_mc2017_realistic_v9-v1/NANOAODSIM",
+                "REDIRECTOR": "root://cms-xrd-global.cern.ch/",
+                "preprocessed_file": {}
+            },
+            "TSlepSlep_UL": {
+                "notes": "SUSY Signal Sample from 2017, used in our Run2 analysis, but this one is reprocessed for Ultra Legacy",
+                "isMC": true,
+                "postBPix": false,
+                "custom_tag": "SMS, UL",
+                "AOD_version": "9",
+                "branch": "Events",
+                "REMOTE_DIRECTORY": "dataset=/SMS-TSlepSlep_mSlep-100To475_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL17NanoAODv9-FSUL17_FSUL17_106X_mc2017_realistic_v9-v1/NANOAODSIM",
+                "REDIRECTOR": "root://cms-xrd-global.cern.ch/",
+                "preprocessed_file": {}
+            }
+        },
+        "2023": {
+            "SlepSnu_MN1-260_MN2-280_MC1-270": {
+                "notes": "SUSY Signal Sample from 2023, centrally produced",
+                "isMC": true,
+                "postBPix": true,
+                "custom_tag": "SMS",
+                "AOD_version": "12",
+                "branch": "Events",
+                "REMOTE_DIRECTORY": "dataset=/SlepSnuCascade_MN1-260_MN2-280_MC1-270_TuneCP5_13p6TeV_madgraphMLM-pythia8/Run3Summer23BPixNanoAODv12-130X_mcRun3_2023_realistic_postBPix_v6-v3/NANOAODSIM",
+                "REDIRECTOR": "root://cms-xrd-global.cern.ch/",
+                "preprocessed_file": {}
+            },
+            "SlepSnu_MN1-220_MN2-260_MC1-240": {
+                "notes": "SUSY Signal Sample from 2023, centrally produced",
+                "isMC": true,
+                "postBPix": true,
+                "custom_tag": "SMS",
+                "AOD_version": "12",
+                "branch": "Events",
+                "REMOTE_DIRECTORY": "dataset=/SlepSnuCascade_MN1-220_MN2-260_MC1-240_TuneCP5_13p6TeV_madgraphMLM-pythia8/Run3Summer23BPixNanoAODv12-130X_mcRun3_2023_realistic_postBPix_v6-v3/NANOAODSIM",
+                "REDIRECTOR": "root://cms-xrd-global.cern.ch/",
+                "numEvents": {},
+                "preprocessed_file": {}
+            },
+            "SlepSnu_MN1-270_MN2-280_MC1-275": {
+                "notes": "SUSY Signal Sample from 2023, centrally produced",
+                "isMC": true,
+                "postBPix": true,
+                "custom_tag": "SMS",
+                "AOD_version": "12",
+                "branch": "Events",
+                "REMOTE_DIRECTORY": "dataset=/SlepSnuCascade_MN1-270_MN2-280_MC1-275_TuneCP5_13p6TeV_madgraphMLM-pythia8/Run3Summer23BPixNanoAODv12-130X_mcRun3_2023_realistic_postBPix_v6-v3/NANOAODSIM",
+                "REDIRECTOR": "root://cms-xrd-global.cern.ch/",
+                "numEvents": {},
+                "preprocessed_file": {}
+            },
+            "TTto2L2Nu": {
+                "notes": "TTbar background sample, largest background to our susy signal (?)",
+                "isMC": true,
+                "postBPix": false,
+                "custom_tag": "BG",
+                "AOD_version": "12",
+                "branch": "Events",
+                "REMOTE_DIRECTORY": "dataset=/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8/Run3Summer23NanoAODv12-130X_mcRun3_2023_realistic_v14-v2/NANOAODSIM",
+                "REDIRECTOR": "root://cms-xrd-global.cern.ch/",
+                "numEvents": {},
+                "preprocessed_file": {}
+            },
+            "WZ": {
+                "notes": "WZ inclusive (all decay modes?) background sample",
+                "isMC": true,
+                "postBPix": true,
+                "custom_tag": "BG",
+                "AOD_version": "12",
+                "branch": "Events",
+                "REMOTE_DIRECTORY": "dataset=/WZ_TuneCP5_13p6TeV_pythia8/Run3Summer23BPixNanoAODv12-130X_mcRun3_2023_realistic_postBPix_v2-v2/NANOAODSIM",
+                "REDIRECTOR": "root://cms-xrd-global.cern.ch/",
+                "numEvents": {},
+                "preprocessed_file": {}
+            },
+            "WW": {
+                "notes": "WW inclusive (all decay modes?) background sample",
+                "isMC": true,
+                "postBPix": true,
+                "custom_tag": "BG",
+                "AOD_version": "12",
+                "branch": "Events",
+                "REMOTE_DIRECTORY": "dataset=/WW_TuneCP5_13p6TeV_pythia8/Run3Summer23BPixNanoAODv12-130X_mcRun3_2023_realistic_postBPix_v2-v2/NANOAODSIM",
+                "REDIRECTOR": "root://cms-xrd-global.cern.ch/",
+                "numEvents": {},
+                "preprocessed_file": {}
+            },
+            "DY_to2L_2J": {
+                "notes": "Drell Yan, 2 leptons 2 Jets. Imporant for our tag and probe",
+                "isMC": true,
+                "postBPix": true,
+                "custom_tag": "BG",
+                "AOD_version": "12",
+                "branch": "Events",
+                "REMOTE_DIRECTORY": "dataset=/DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8/Run3Summer23BPixNanoAODv12-130X_mcRun3_2023_realistic_postBPix_v2-v3/NANOAODSIM",
+                "REDIRECTOR": "root://cms-xrd-global.cern.ch/",
+                "numEvents": {},
+                "preprocessed_file": {}
+            },
+            "DY_to2L_4J": {
+                "notes": "Drell Yan, 2 leptons 4 Jets. Imporant for our tag and probe",
+                "isMC": true,
+                "postBPix": true,
+                "custom_tag": "BG",
+                "AOD_version": "12",
+                "branch": "Events",
+                "REMOTE_DIRECTORY": "dataset=/DYto2L-4Jets_MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8/Run3Summer23BPixNanoAODv12-130X_mcRun3_2023_realistic_postBPix_v2-v3/NANOAODSIM",
+                "REDIRECTOR": "root://cms-xrd-global.cern.ch/",
+                "numEvents": {},
+                "preprocessed_file": {}
+            }
+        }
+    }
+}

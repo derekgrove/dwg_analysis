@@ -1,0 +1,197 @@
+{
+    "SlepSnu_22": {
+        "files": {
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/SlepSnuCascade_N2-280_C1-270_N1-260_NanoAODv12.root": "Events"
+        },
+        "metadata": {
+            "is_mc": true,
+            "is_signal": true
+        }
+    },
+"ttbar_17": {
+        "files": {
+            "/eos/user/d/dgrove/datasets/ttbar_nAODv9/040206C8-D83C-BA42-BE3F-C3CB0920BEED.root": "Events",
+            "/eos/user/d/dgrove/datasets/ttbar_nAODv9/0C483F40-C7FA-0445-B1A0-0C90E2450527.root": "Events",
+            "/eos/user/d/dgrove/datasets/ttbar_nAODv9/12D57CAF-00C5-484F-B744-5BA50CDC7540.root": "Events"
+        },
+        "metadata": {
+            "is_mc": true,
+            "is_signal": false
+        }
+    },
+"ttbar_23": {
+        "files": {
+            "/eos/user/d/dgrove/datasets/ttbar_nAODv12/data/023129e6-7ab3-4a97-a7ed-c0450278922d.root": "Events"
+        },
+        "metadata": {
+            "is_mc": true,
+            "is_signal": false
+        }
+    },
+    
+    "WZ_17": {
+        "files": {
+            "/eos/user/d/dgrove/datasets/WZ_2017/34A260AF-5CF4-5648-BF9F-B84B7A5F2859.root": "Events",
+            "/eos/user/d/dgrove/datasets/WZ_2017/E4F05A6C-CBDD-254C-ABBD-38B7A5E81EB3.root": "Events"
+        },
+        "metadata": {
+            "is_mc": true,
+            "is_signal": false
+        }
+    },
+    "WZ_23": {
+
+        "files": {
+
+            "/eos/user/d/dgrove/datasets/WZ_2023/0380d427-eca7-4b78-865f-dd03aefae331.root": "Events",
+
+            "/eos/user/d/dgrove/datasets/WZ_2023/1ab85b40-9b45-4494-b269-6ed0178e8430.root": "Events"
+
+        },
+
+        "metadata": {
+
+            "is_mc": true,
+
+            "is_signal": false
+
+        }
+
+    },
+    "WW_23": {
+
+        "files": {
+
+            "/eos/user/d/dgrove/datasets/WW_2023/0557d8d3-153b-4f5a-95b8-b4755f378092.root": "Events",
+
+            "/eos/user/d/dgrove/datasets/WW_2023/095e6584-5014-48d3-afdf-2f311ff3285c.root": "Events"
+
+        },
+
+        "metadata": {
+
+            "is_mc": true,
+
+            "is_signal": false
+
+        }
+
+    },
+    "DY_2023_10_50": {
+
+        "files": {
+
+            "/eos/user/d/dgrove/datasets/DY_2023_10_50/01176deb-16a6-4e8e-8222-2bf8a6b70a46.root": "Events"
+
+        },
+
+        "metadata": {
+
+            "is_mc": true,
+
+            "is_signal": false
+
+        }
+
+    },
+    "TSlepSlep_17": {
+        "files": {
+            "/eos/user/d/dgrove/datasets/TSlepSlep/5244169E-4F18-F649-BE1C-C327F93D668C.root": "Events",
+            "/eos/user/d/dgrove/datasets/TSlepSlep/6EAFD443-B388-6841-892C-821A020505AA.root": "Events",
+            "/eos/user/d/dgrove/datasets/TSlepSlep/78B9FAED-5A2C-7540-89F0-507185DF146D.root": "Events",
+            "/eos/user/d/dgrove/datasets/TSlepSlep/CAD43160-4DB5-5445-A0B3-C88CCAC73F61.root": "Events"
+        },
+        "metadata": {
+            "is_mc": true,
+            "is_signal": true
+        }
+    },
+    "TChiWZ_17": {
+        "files": {
+            "/eos/user/d/dgrove/datasets/TChiWZ/0B041116-DADF-CF45-8C16-DF2920CC756D.root": "Events",
+            "/eos/user/d/dgrove/datasets/TChiWZ/1D4A080A-4230-7D44-BC89-7569261BDEB7.root": "Events",
+            "/eos/user/d/dgrove/datasets/TChiWZ/24CC610C-2F7E-C64D-AF51-48CCDF98DE28.root": "Events",
+            "/eos/user/d/dgrove/datasets/TChiWZ/42F85F0D-CD12-414D-A062-EA16FBECBE74.root": "Events"
+        },
+        "metadata": {
+            "is_mc": true,
+            "is_signal": true
+        }
+    },
+    "SlepSnu_MN1_220": {
+        "files": {
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/0B041116-DADF-CF45-8C16-DF2920CC756D.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/0238744e-b5c3-48d0-9415-97854405b503.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/1b117b99-b288-4121-a3ad-e9cdee0deebd.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/1c3d452f-62da-4dd1-9734-fbd7024de64d.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/1d2b26be-ae3d-42a2-8788-be01a97b28c7.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/393292c6-6a1a-45d1-9031-1c05e0ddba78.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/435988e8-a68a-48d0-82f0-a388dd64d7b6.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/45161c49-7f6a-4d5f-8cc7-15382cad4682.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/525b3721-8456-4be9-8ebb-9bd077162131.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/60150486-f22c-4b0a-8222-02b26a9493f1.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/6d6e3789-b918-4aab-a86c-efafffabf12c.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/6fd954b5-2f2c-4efb-8fdd-18c78bbe0649.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/794b6891-e65e-422a-9388-9f87663c83ae.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/7c67a574-a41f-4ffc-921a-7a268002cdc7.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/8a33b5b6-5328-4552-848d-693c050bbc9d.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/8eb51295-6260-4a29-b5bd-04c8d3231ceb.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/aa622bcd-2d33-449f-b803-8972fe021efd.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/d3272061-dba4-4258-9947-eccaee03ae45.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-220_MN2-260_MC1-240/fe4466d8-f94d-460e-b165-4d6d746cf27d.root": "Events"
+        },
+        "metadata": {
+            "is_mc": true,
+            "is_signal": true
+        }
+    },
+    "SlepSnu_MN1_260": {
+        "files": {
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-260_MN2-280_MC1-270/0d22cdae-b8db-41fb-8ab4-f0c74187f950.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-260_MN2-280_MC1-270/2f75bba9-b604-4d42-9d06-0c34ce6b551c.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-260_MN2-280_MC1-270/3e0d6872-e7e1-4aab-9913-50e2d66ccbf4.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-260_MN2-280_MC1-270/5e033857-fdd9-43fa-b8a6-bb606a0d7cf3.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-260_MN2-280_MC1-270/7db046a5-3839-49c1-92ee-823499ecbfb0.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-260_MN2-280_MC1-270/7fafb075-d37e-4ee0-86dd-63d7554f5304.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-260_MN2-280_MC1-270/81e6a990-2871-45cc-b1fd-dcc44af5e85a.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-260_MN2-280_MC1-270/86f4a155-3b0f-48aa-a8fe-386495defc7b.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-260_MN2-280_MC1-270/99c3fd5f-17ef-42aa-a356-a6cf10244049.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-260_MN2-280_MC1-270/a1dca706-2ecb-4cef-84a8-3feb33428ecc.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-260_MN2-280_MC1-270/aa2f23ee-3fa8-4450-ae4e-0a44290dd146.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-260_MN2-280_MC1-270/cbb38e5f-4486-4f9c-b0db-272c9008133a.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-260_MN2-280_MC1-270/ccbd4f89-122a-4065-b0be-f38e9b2878d1.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-260_MN2-280_MC1-270/ee78214f-596d-4b13-923a-b2791499596c.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-260_MN2-280_MC1-270/f786c693-9b96-47dc-8f97-3986c1067e05.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-260_MN2-280_MC1-270/fac026d7-c47c-4007-a51c-514fe55f5bc7.root": "Events"
+        },
+        "metadata": {
+            "is_mc": true,
+            "is_signal": true
+        }
+    },
+    "SlepSnu_MN1_270": {
+        "files": {
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-270_MN2-280_MC1-275/014a47c0-b196-47d6-aaf1-c482c58e7fb3.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-270_MN2-280_MC1-275/43a03ae0-8764-4e18-9473-e4d5b2ce5b3e.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-270_MN2-280_MC1-275/d9e85cdd-50cf-4144-8d81-85dc4c341c76.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-270_MN2-280_MC1-275/1b48e487-da20-4894-b8f6-03a65e07c682.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-270_MN2-280_MC1-275/74cb0109-f18a-467c-903b-9fec55026124.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-270_MN2-280_MC1-275/e3f98444-3de4-4c49-bcf9-3e5e9ba825e5.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-270_MN2-280_MC1-275/25da9226-6708-479f-888f-dccb550b2f00.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-270_MN2-280_MC1-275/9d5bb43f-8865-4736-8140-cc9448b521d1.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-270_MN2-280_MC1-275/ebb35a9e-c049-4414-a126-46cf7f414be0.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-270_MN2-280_MC1-275/36cc4051-4e1f-4a9c-a793-7130d67e55c9.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-270_MN2-280_MC1-275/a00466ab-68f5-400b-b4c5-f088994049d9.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-270_MN2-280_MC1-275/ee2dca10-4a75-46a9-bf87-fe6c6bb05400.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-270_MN2-280_MC1-275/3fc4792a-98ef-4ee4-ad52-2ef45fdad2ae.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-270_MN2-280_MC1-275/a2d8829f-8d72-476f-b468-5939df3918b8.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-270_MN2-280_MC1-275/fbd6ceb4-ab93-461c-8eb6-7a390df211c3.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-270_MN2-280_MC1-275/40134c6c-2296-49a8-8473-c49a5ca39a99.root": "Events",
+            "/eos/user/d/dgrove/datasets/SlepSnuCascade_N2/Run3Summer23/MN1-270_MN2-280_MC1-275/bc617c28-893d-4204-8273-fe0ed7e8f143.root": "Events"
+        },
+        "metadata": {
+            "is_mc": true,
+            "is_signal": true
+        }
+    }
+}
