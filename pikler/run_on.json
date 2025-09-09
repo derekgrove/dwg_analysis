@@ -1,0 +1,62 @@
+{
+  "NANO": {
+    "2023": {
+      "SlepSnu_MN1-260_MN2-280_MC1-270": {
+        "run": false,
+        "reduced_computation": true,
+        "use_client": false,
+        "num_chunks": 1,
+        "num_files": 1
+      },
+      "SlepSnu_MN1-220_MN2-260_MC1-240": {
+        "run": false,
+        "reduced_computation": true,
+        "use_client": false,
+        "num_chunks": 1,
+        "num_files": 1
+      },
+      "SlepSnu_MN1-270_MN2-280_MC1-275": {
+        "run": false,
+        "reduced_computation": true,
+        "use_client": false,
+        "num_chunks": 1,
+        "num_files": 1
+      },
+      "WZ": {
+        "run": false,
+        "reduced_computation": true,
+        "use_client": false,
+        "num_chunks": 1,
+        "num_files": 1
+      },
+      "WW": {
+        "run": false,
+        "reduced_computation": true,
+        "use_client": false,
+        "num_chunks": 1,
+        "num_files": 1
+      },
+      "DY_to2L_2J": {
+        "run": false,
+        "reduced_computation": true,
+        "use_client": false,
+        "num_chunks": 1,
+        "num_files": 1
+      },
+      "DY_to2L_4J": {
+        "run": false,
+        "reduced_computation": true,
+        "use_client": false,
+        "num_chunks": 1,
+        "num_files": 1
+      },
+      "Prompt_JPsi_toEE_pth10toInf": {
+        "run": false,
+        "reduced_computation": true,
+        "use_client": false,
+        "num_chunks": 1,
+        "num_files": 1
+      }
+    }
+  }
+}

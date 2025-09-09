@@ -1,0 +1,50 @@
+{
+  "Electron": {
+    "Gen_selections": {
+      "isSignal": true,
+      "isLightFake": true,
+      "isHeavyFake": true,
+      "isTauFake": true
+    },
+    "Quality_selections": {
+      "isGold": true,
+      "isSilver": true,
+      "isBronze": true
+    },
+    "Other_flags": {
+      "isPlaceholder": false
+    }
+  },
+  "LowPtElectron": {
+    "Gen_selections": {
+      "isSignal": true,
+      "isLightFake": true,
+      "isHeavyFake": true,
+      "isTauFake": true
+    },
+    "Quality_selections": {
+      "isGold": true,
+      "isSilver": true,
+      "isBronze": true
+    },
+    "Other_flags": {
+      "isPlaceholder": false
+    }
+  },
+  "Muon": {
+    "Gen_selections": {
+      "isSignal": true,
+      "isLightFake": true,
+      "isHeavyFake": true,
+      "isTauFake": true
+    },
+    "Quality_selections": {
+      "isGold": true,
+      "isSilver": true,
+      "isBronze": true
+    },
+    "Other_flags": {
+      "isPlaceholder": false
+    }
+  }
+}
